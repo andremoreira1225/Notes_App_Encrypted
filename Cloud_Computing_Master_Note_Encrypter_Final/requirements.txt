@@ -1,0 +1,7 @@
+flask
+pylint
+black
+mysql.connector 
+pycryptodome
+rsa
+gunicorn

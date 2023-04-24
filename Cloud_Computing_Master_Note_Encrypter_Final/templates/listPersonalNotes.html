@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/listPersonalNotes.css') }}">
+    <script src="https://kit.fontawesome.com/4a16c056e8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="center">
+    <form class="logoutButton" action="/" method="get">
+    <button class="logout" type="submit"><i class="fa-solid fa-arrow-right-from-bracket fa-2x"></i></button>
+    </form>  
+    <h1>Escreva uma nota</h1>
+        <form action="/note/add" method="post">
+            <div class="txtField">
+                <input name="tituloNota" value="" type="text" required>
+              
+                <label for="tituloNota">Titulo da nota</label>
+            </div>
+            <div class="wrap">
+                <button class="buttonSendNote" type="submit">Escrever <i class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            <div class="note">
+              <ul>
+                  {% for todo in todo_list %}
+                  <li>
+                  <h3> | {{ todo[2]}}</h3>
+                  <span>
+                    <form class="formButtons">
+                      <button class="butao" formaction="/note/{{todo[0]}}/view/" type="submit"><i class="fa-solid fa-book-open"></i></button>
+                    </form>
+                  </span>
+                  <span>
+                    <form class="formButtons" >
+                      <button class="butao" formaction="/note/{{todo[0]}}/edit/" type="submit"><i class="fa-solid fa-file-pen"></i></button>
+                    </form>
+                  </span>
+                  <span>
+                    <form class="formButtons" >
+                      <button class="butao" formaction="/note/{{todo[0]}}/delete/" type="submit"><i class="fa-solid fa-trash"></i></button>
+                    </form>
+                  </span>
+                  </li>
+                  {% endfor %}
+                  
+              </ul>
+              
+            </div>
+            
+        </form>
+        
+    </div>
+    <div class="area">
+      <div class="circles">
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+              <ol></ol>
+      </div>
+    </div >
+</body>
+
+</html>
+

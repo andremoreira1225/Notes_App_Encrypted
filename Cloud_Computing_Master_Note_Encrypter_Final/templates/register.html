@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
+</head>
+<body>
+    <div class="center">
+        <h1>Registar</h1>
+        <form action="/register/" method="post">
+            <div class="txtField">
+               <input type="text" name="username" required>
+               <span></span>
+               <label>Nome do utilizador</label>
+           </div>
+           <div class="txtField">
+               <input type="text" name="email" required>
+               <span></span>
+               <label>Email</label>
+           </div>
+            <div class="txtField">
+                <input type="password" name="password" required>
+                  <span></span>
+               <label>Palavra-passe</label>
+            </div>
+            <div class="wrap">
+              <button class="buttonSendNote" type="submit">Registar</i></button>
+            </div>
+            <a href="/">
+                <button type="button">Voltar</button>
+            </a>
+    </form>
+    </div>
+</body>
+</html>

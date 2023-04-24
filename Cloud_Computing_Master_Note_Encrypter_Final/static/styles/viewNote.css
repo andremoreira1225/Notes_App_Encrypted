@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+    background-image: url('/static/backViewEdit.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  
+  .center h1{
+    text-align: center;
+    padding: 10px 0;
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  
+  h3{
+    color: #919191;
+  }
+  
+  label{
+      display: inline-block;
+      width: 920px;
+      height: 220px;
+      padding: 10px 0 0 10px;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 20px;
+      border-color: #eeeeee;
+      overflow: hidden;
+      overflow-y: scroll;
+      margin-top: 2%;
+      background-color: #dbdbdb;
+      color: #3a3a3a;
+  }
+  
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:2%;
+  }
+  
+  .button {
+    width: 200px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .button:hover {
+    background-color: #92a331;
+    box-shadow: 0px 15px 20px rgba(50, 72, 145, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  

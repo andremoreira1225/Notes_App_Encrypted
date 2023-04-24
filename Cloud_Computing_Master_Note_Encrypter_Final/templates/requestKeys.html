@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/requestKeys.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="center" id="background">
+        <h1>Escreve as chaves</h1>
+        <form action="/keysRequest/" method="post">
+                <div class="txtTitle">
+                    <h3>Copie as suas chaves publica e privada para um local seguro</h3>
+                    <span></span>
+                </div>
+                <div class="txtField">
+                    <input name="chavePublica" value="{{chavePub}}" type="text" required>
+                    <span></span>
+                    <label for="chavePublica">Chave publica</label>
+                </div>
+                <div class="txtField">
+                    <input name="chavePrivada" value="{{chavePriv}}" type="text" required>
+                    <span></span>
+                    <label for="chavePrivada">Chave privada</label>
+                </div>
+                <br>
+                <div class="wrap">
+                    <button class="button" formaction="/" formmethod="get" type="submit" id="voltar">Voltar</button> 
+                </div>
+        </form>
+    </div>
+</body>
+</html>

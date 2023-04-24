@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: #eeeeee;
+    background-image: url('/static/backViewEdit.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
+  
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  
+  .center h1{
+    text-align: center;
+    padding: 10px 0;
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-top: 5%;
+  }
+  
+  
+  h3{
+    color: #919191;
+  }
+  
+  .textarea{
+      background-color: #dbdbdb;
+      color: #3a3a3a;
+      padding: 10px 0 0 10px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      outline: none;
+      line-height: 1.4;
+      width: 920px;
+      height: 220px;
+      transition: all 0.2s;
+      resize: none;
+      margin-top: 2%;
+  }
+  
+  .textarea:hover{
+      cursor: pointer;
+      background-color: #f3f3f3;
+  }
+  
+  .textarea:focus{
+      cursor: text;
+      color: #252525;
+      background-color: white;
+      border-color: #797979;
+  }
+  
+  .wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:1%;
+  }
+  
+  .button {
+    width: 200px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+  
+  #save.button:hover {
+    background-color: #2691d9;
+    box-shadow: 0px 15px 20px rgba(50, 72, 145, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  #delete.button:hover {
+    background-color: #f82803;
+    box-shadow: 0px 15px 20px rgba(50, 72, 145, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  #back.button:hover {
+    background-color: #92a331;
+    box-shadow: 0px 15px 20px rgba(50, 72, 145, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  

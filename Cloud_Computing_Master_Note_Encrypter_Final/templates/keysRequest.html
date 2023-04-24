@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/keysRequest.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    <div class="center" id="background">
+        <h1>Escreve as chaves</h1>
+        <form action="/keys/" method="post">
+                <div class="txtTitle">
+                    <h3>Introduza aqui as chaves que recebeu no registo</h3>
+                    <span></span>
+                </div>
+                <div class="txtField">
+                    <textarea name="chavePublica" value="" type="text" placeholder="Introduza a sua chave pública" required></textarea>
+                    <span></span>  
+                </div>
+                <div class="txtField">
+                    <textarea name="chavePrivada" value="" type="text" placeholder="Introduza a sua chave privada" required></textarea>
+                    <span></span
+                </div>
+                <br>
+                <div class="wrap">
+                    <button class="button" type="submit" id="Submeter">Submeter</button> 
+                </div>
+        </form>
+    </div>
+</body>
+</html>
